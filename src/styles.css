@@ -19,6 +19,8 @@
  */
 
 @theme inline {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -63,25 +65,25 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --background: oklch(0.995 0.004 150);
+  --foreground: oklch(0.26 0.012 155);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
+  --primary: oklch(0.52 0.13 152);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.96 0.02 150);
+  --secondary-foreground: oklch(0.45 0.11 152);
   --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
+  --muted-foreground: oklch(0.5 0.02 155);
   --accent: oklch(0.968 0.007 247.896);
   --accent-foreground: oklch(0.208 0.042 265.755);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
+  --border: oklch(0.92 0.02 150);
   --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --ring: oklch(0.52 0.13 152);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -95,6 +97,8 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
+  --primary-dark: oklch(0.44 0.11 152);
+  --icon-accent-light: oklch(0.96 0.02 150);
 }
 
 .dark {
@@ -141,4 +145,12 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
   }
+}
+
+@layer components {
+  .icon-card { @apply flex flex-col items-center rounded-2xl border bg-card p-6 text-center transition-all duration-300; }
+  .icon-card:hover { @apply -translate-y-1 border-primary; box-shadow: 0 12px 30px -12px color-mix(in oklch, var(--primary) 35%, transparent); }
+  .icon-tile { @apply grid h-24 w-24 place-items-center rounded-full bg-secondary text-primary transition-colors duration-300; --icon-accent: var(--icon-accent-light); }
+  .icon-card:hover .icon-tile { @apply bg-primary text-primary-foreground; --icon-accent: var(--primary-dark); }
+  .icon-mono { --icon-accent: none; }
 }
