@@ -14,13 +14,13 @@ export const categoryIcons: CategoryIconDef[] = [
     slug: "womens-clothing",
     name: "Women's Clothing",
     component: "WomensClothingIcon",
-    body: `<path ${A} stroke="none" d="M22 30h20l8 22H14z"/><path d="M26 8v7M38 8v7"/><path d="M26 15c1.5 4 10.5 4 12 0l3 7-4 8H27l-4-8z"/><path d="M27 30h10l13 22c-11 3-25 3-36 0z"/><path d="M27 30l-2 5M37 30l2 5"/>`,
+    body: `<path ${A} d="M40 17l4 13 6 21-8 2-3-28z"/><path d="M26 9c2 4 7 5 11 2l3-1 6 3 3 9-6 2-2-4"/><path d="M26 9l-6 2-6 10 6 2 2-4"/><path d="M22 19l-3 11 2 22c5 2 11 2 14 0l2-20"/><path d="M40 17l4 13 6 21-8 2-3-28"/><path d="M37 12L20 33M40 18L21 45M43 49l-7 2"/>`,
   },
   {
     slug: "mens-clothing",
     name: "Men's Clothing",
     component: "MensClothingIcon",
-    body: `<path d="M24 10l-12 6-5 14 7 3 4-8v29h28V25l4 8 7-3-5-14-12-6"/><path ${A} d="M24 10l8 8 8-8M24 10l-2 7 6 4 4-3M40 10l2 7-6 4-4-3"/><path d="M32 22v30"/><circle cx="32" cy="30" r=".6" fill="currentColor"/><circle cx="32" cy="38" r=".6" fill="currentColor"/><circle cx="32" cy="46" r=".6" fill="currentColor"/>`,
+    body: `<path d="M27 8h10l1 4-6 4-6-4z"/><path d="M26 11l-9 4-7 28 6 2 5-20 1 25c6 2 16 2 22 0l1-25 5 20 6-2-7-28-9-4"/><path ${A} d="M30 16h4v12h-4z"/><path d="M10 41l6 2M48 43l6-2"/><circle cx="32" cy="19" r=".6" fill="currentColor"/><circle cx="32" cy="22.5" r=".6" fill="currentColor"/><circle cx="32" cy="26" r=".6" fill="currentColor"/>`,
   },
   {
     slug: "beauty-makeup",
@@ -50,7 +50,7 @@ export const categoryIcons: CategoryIconDef[] = [
     slug: "baby-care",
     name: "Baby Care",
     component: "BabyCareIcon",
-    body: `<path d="M28 16c0-6 8-6 8 0"/><path ${A} d="M24 16h16v6H24z"/><path d="M24 16h16v6H24z"/><path d="M26 22h12l2 6v20a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6V28z"/><path d="M24 32h5M24 38h4M24 44h5"/><path d="M35 39c-1.5-2-4 0-2.5 2l2.5 2.5 2.5-2.5c1.5-2-1-4-2.5-2z"/>`,
+    body: `<circle cx="32" cy="36" r="18" ${A}/><path d="M14.5 31.5a4.5 4.5 0 0 0 0 9M49.5 31.5a4.5 4.5 0 0 1 0 9"/><path d="M33 18c-3-1-3-5 0-6 3 0 4 3 2 5"/><path d="M23 30c1.2-1.6 3.4-1.6 4.6 0M36.4 30c1.2-1.6 3.4-1.6 4.6 0"/><circle cx="25.5" cy="36" r="1.6" fill="currentColor" stroke="none"/><circle cx="38.5" cy="36" r="1.6" fill="currentColor" stroke="none"/><path d="M28.5 43c2 2 5 2 7 0"/>`,
   },
   {
     slug: "home-kitchen",
